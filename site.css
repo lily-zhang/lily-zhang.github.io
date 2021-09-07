@@ -1,0 +1,231 @@
+body {
+   background-color: #F2EBEB;
+}
+
+#nav_container {
+   position: fixed;
+   left: 3vw;
+   width: 12vw;
+   float: left;
+   text-align: center;
+}
+
+#nav_icon {
+   background-image: url('images/pandora.jpg');
+   background-repeat: no-repeat;
+   width: 12vw;
+   height: 30vw;
+   background-size: cover;
+   margin-bottom: 20px;
+}
+
+#nav_title {
+   margin-bottom: 15px;
+   font-family: Fairfield;
+   font-size: 13pt;
+}
+
+#nav_menu {
+   display: flex;
+   flex-direction: column;
+}
+
+a.nav_menu_item:link, a.nav_menu_item:visited, a.nav_menu_item:active {
+   font-family: BankPrinter;
+   font-size: 8pt;
+   color: #635780;
+   padding-bottom: 5px;
+   text-align: center;
+   text-decoration: none;
+}
+
+a.nav_menu_item:hover {
+   color: #DC394E;
+}
+
+#content {
+   position: relative;
+   left: 18vw;
+   margin-top: 50px;
+   width: 65vw;
+}
+
+p.content-text {
+   font-family: Fairfield;
+   font-size: 11pt;
+}
+
+ul.content-text {
+   font-family: Fairfield;
+   font-size: 11pt;
+   line-height: 1.5;
+   list-style-type: square;
+}
+
+p.content-text a:link, p.content-text a:visited, p.content-text a:active,
+ul.content-text a:link, ul.content-text a:visited, ul.content-text a:active  {
+   color: #635780;
+   text-decoration: dotted underline;
+}
+
+p.content-text a:hover,
+ul.content-text a:hover {
+   color: #DC394E;
+   letter-spacing: 0.5px;
+   font-weight: bold;
+}
+
+.submenu::-webkit-scrollbar {
+  display: none;
+}
+
+.submenu {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* WRITING */
+#writing_menu {
+   display: flex;
+   flex-direction: column;
+   float: left;
+   width: 25%;
+}
+
+#writing_display {
+   float:left;
+   width: 75%;
+   margin-left: 25px;
+   font-family: Fairfield;
+}
+
+#writing_menu h1 {
+   font-family: Fairfield;
+   font-size: 10pt;
+   margin-bottom: 4px;
+}
+
+.writing_menu_item {
+   font-family: Fairfield;
+   font-style: normal;
+   font-size: 10pt;
+   margin-bottom: 2px;
+   margin-left: 5px;
+}
+.writing_menu_item_hover {
+   color: red;
+}
+
+#writing_display h1 {
+   font-size: 13pt;
+}
+
+/* PHOTOS/DRAWINGS/FILMS GALLERY */
+#album_menu {
+   display: flex;
+   flex-direction: column;
+   float: left;
+   width: 15%;
+}
+
+.album_item {
+   font-family: Fairfield;
+   font-style: normal;
+   font-size: 10pt;
+   margin-bottom: 2px;
+   margin-left: 5px;
+}
+
+.album_item_hover {
+   color: red;
+}
+
+#image_menu {
+   display: flex;
+   flex-direction: column;
+   float: left;
+   width: 15vh;
+   overflow-y: scroll;
+   height: 85vh;
+}
+
+#image_display {
+   float:right;
+   width: 60%;
+   margin-left: 40px;
+}
+
+.thumbnail {
+   height: 13vh;
+   width: 13vh;
+   object-fit: cover;
+   margin: 3px;
+   opacity: 0.5;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.image_caption {
+   padding: 13px;
+   font-family: Fairfield;
+   font-size: 10pt;
+   margin-left: 30px;
+}
+
+.displayed_image {
+   max-height: 80vh;
+   max-width: 50vw;
+   margin-left: 30px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Fonts */
+@font-face {
+   font-family: Fairfield;
+   src: url(fonts/fairfield_light.otf);
+}
+
+@font-face {
+   font-family: Fairfield;
+   src: url(fonts/fairfield_light-italic.otf);
+   font-style: italic;
+}
+
+@font-face {
+   font-family: Fairfield;
+   src: url(fonts/fairfield_bold.otf);
+   font-weight: bold;
+}
+
+@font-face {
+   font-family: Fairfield;
+   src: url(fonts/fairfield_bold-italic.otf);
+   font-style: italic;
+   font-weight: bold;
+}
+
+@font-face {
+   font-family: BankPrinter;
+   src: url(fonts/bank-printer.otf);
+}
+
+#mobile_display {
+   display: none;
+   padding: 7vh;
+   font-family: Fairfield;
+   font-size: 7vh;
+   text-align: center;
+}
+
+@media screen and (max-device-width: 480px), (max-width: 640px) {
+   #nav_container, #content {
+      display:none;
+   }
+
+   #mobile_display {
+      display:block;
+   }
+}
