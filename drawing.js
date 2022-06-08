@@ -8,7 +8,7 @@ files = {
       'l2.jpg' : '',
       'l.jpg' : '',
       'el_greco_1.jpg' : '',
-      'slumber.png' : '',
+      'slumber.jpg' : '',
       'rodin_mother.jpg' : '',
       'sculpture.jpg' : '',
       'jane.jpg' : ''
@@ -19,19 +19,19 @@ files = {
       '9.jpg' : ''
    },
    'Misc.' : {
-      'filles.png' : '',
-      'walking.png' : '',
+      'filles.jpg' : '',
+      'walking.jpg' : '',
       'm.jpg' : '',
       'garcon.jpg' : '',
-      'quartier.png' : '',
-      'sylvia.png' : 'Sylvia from <i>Mad Men</i>',
+      'quartier.jpg' : '',
+      'sylvia.jpg' : 'Sylvia from <i>Mad Men</i>',
    }
 }
 
 directory_name = 'drawings';
 
-album_path = {
-   'Portraiture' : 'portraiture/',
-   'Misc.' : 'misc/',
-   'Illustration' : 'cartoons/'
+album_directory = {
+   'Portraiture' : 'portraiture',
+   'Misc.' : 'misc',
+   'Illustration' : 'cartoons'
 }

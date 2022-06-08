@@ -1,13 +1,13 @@
 files = {
    'B/W' : {
       'sculpture.jpg' : '',
-      'roses.png' : '',
+      'roses.jpg' : '',
       'hallway.jpg' : '',
-      'multiverse1.png' : '',
+      'multiverse1.jpg' : '',
       'portrait1.jpg' : '',
       'basketball.jpg' : '',
-      'multiverse2.png' : '',
-      'flower.png' : '',
+      'multiverse2.jpg' : '',
+      'flower.jpg' : '',
    }
    ,'Daily Life' : {
       'misc21.jpg' : '',
@@ -84,9 +84,9 @@ files = {
 
 directory_name = 'photos';
 
-album_path = {
-   'B/W' : 'bw/',
-   'Campus' : 'campus/',
-   'Daily Life' : 'misc/',
-   'Travel' : 'travels/'
+album_directory = {
+   'B/W' : 'bw',
+   'Campus' : 'campus',
+   'Daily Life' : 'misc',
+   'Travel' : 'travels'
 }

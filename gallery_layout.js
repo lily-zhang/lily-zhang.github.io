@@ -1,4 +1,4 @@
-var files, album_path, directory_name;
+var files, album_directory, directory_name;
 
 function render_albums(obj, klass) {
    return Object.keys(obj).reduce(function (acc, key) {
@@ -8,7 +8,7 @@ function render_albums(obj, klass) {
 
 function render_thumbnails(obj, album_name, klass) {
    return Object.keys(obj).reduce(function (acc, path) {
-      return `${acc}<img src="./${directory_name}/${album_path[album_name]}/${path}" filename="${path}" class="${klass}" />`;
+      return `${acc}<img src="./${directory_name}/${album_directory[album_name]}/${path}" filename="${path}" class="${klass}" />`;
    }, '');
 }
 

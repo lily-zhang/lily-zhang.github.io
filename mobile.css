@@ -44,9 +44,9 @@ img#hamburger {
 
 a.nav_menu_item:link, a.nav_menu_item:visited, a.nav_menu_item:active {
    font-family: BankPrinter;
-   font-size: 3em;
+   font-size: 4em;
    color: #635780;
-   padding-bottom: 7px;
+   padding-bottom: 2em;
    text-align: center;
    text-decoration: underline;
 }
@@ -63,7 +63,7 @@ p.content-text {
 
 ul.content-text {
    font-family: Fairfield;
-   font-size: 2em;
+   font-size: 4em;
    line-height: 1.5;
    list-style-type: square;
 }
@@ -138,7 +138,7 @@ ul.content-text a:hover {
 .album_item {
    font-family: Fairfield;
    font-style: normal;
-   font-size: 2em;
+   font-size: 4em;
 }
 
 .album_item_hover {
@@ -149,7 +149,8 @@ ul.content-text a:hover {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   justify-content: center;
+   /* justify-content: center; */
+   align-items: center;
 }
 
 #image_display {
@@ -162,6 +163,7 @@ ul.content-text a:hover {
    z-index: 101;
    background-color: white;
    text-align: center;
+   vertical-align: center;
 }
 
 .thumbnail {
@@ -175,7 +177,7 @@ ul.content-text a:hover {
 
 .image_caption {
    font-family: Fairfield;
-   font-size: 1em;
+   font-size: 3em;
    position: fixed;
    left: 2vh;
    bottom: 2vh;
