@@ -44,7 +44,7 @@ img#hamburger {
 
 a.nav_menu_item:link, a.nav_menu_item:visited, a.nav_menu_item:active {
    font-family: BankPrinter;
-   font-size: 14pt;
+   font-size: 2em;
    color: #635780;
    padding-bottom: 7px;
    text-align: center;
@@ -58,12 +58,12 @@ a.nav_menu_item:hover {
 p.content-text {
    margin: 2vh 2vw;
    font-family: Fairfield;
-   font-size: 14pt;
+   font-size: 1em;
 }
 
 ul.content-text {
    font-family: Fairfield;
-   font-size: 11pt;
+   font-size: 1em;
    line-height: 1.5;
    list-style-type: square;
 }
@@ -91,7 +91,7 @@ ul.content-text a:hover {
 }
 
 /* WRITING */
-#writing_menu {
+/* #writing_menu {
    display: flex;
    flex-direction: column;
    float: left;
@@ -124,7 +124,7 @@ ul.content-text a:hover {
 
 #writing_display h1 {
    font-size: 13pt;
-}
+} */
 
 /* PHOTOS/DRAWINGS/FILMS GALLERY */
 #album_menu {
@@ -138,7 +138,7 @@ ul.content-text a:hover {
 .album_item {
    font-family: Fairfield;
    font-style: normal;
-   font-size: 16pt;
+   font-size: 2em;
 }
 
 .album_item_hover {
@@ -166,16 +166,16 @@ ul.content-text a:hover {
 
 .thumbnail {
    object-fit: cover;
-   height: 30vh;
-   width: 30vh;
-   margin: 0.7vh;
+   height: 30vw;
+   width: 30vw;
+   margin: 0.7vw;
    border-radius: 8px;
    cursor: pointer;
 }
 
 .image_caption {
    font-family: Fairfield;
-   font-size: 14pt;
+   font-size: 1em;
    position: fixed;
    left: 2vh;
    bottom: 2vh;

@@ -34,6 +34,10 @@ body {
    display: none;
 }
 
+img#hamburger {
+   display: none;
+}
+
 a.nav_menu_item:link, a.nav_menu_item:visited, a.nav_menu_item:active {
    font-family: BankPrinter;
    font-size: 8pt;
@@ -89,7 +93,7 @@ ul.content-text a:hover {
 }
 
 /* WRITING */
-#writing_menu {
+/* #writing_menu {
    display: flex;
    flex-direction: column;
    float: left;
@@ -122,7 +126,7 @@ ul.content-text a:hover {
 
 #writing_display h1 {
    font-size: 13pt;
-}
+} */
 
 /* PHOTOS/DRAWINGS/FILMS GALLERY */
 #album_menu {
