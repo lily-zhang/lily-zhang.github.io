@@ -1,16 +1,31 @@
 var pages = {
-   'About' : 'index.html',
+   // 'About' : 'index.html',
    'Drawing' : 'drawing.html',
    'Photography' : 'photos.html',
-   'Playlist' : 'music.html',
-   'Web Design' : 'development.html'
+   'About' : 'about.html',
+   // 'Playlist' : 'music.html',
+   // 'Web Design' : 'development.html'
 }
 
+var isMobile;
+
 $(document).ready(function() {
+   isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || $(window).width() < 500;
+   $('link#stylesheet')[0].href = isMobile ? 'mobile.css' : 'site.css';
+
    $('#nav_menu').append(render_links(pages, 'nav_menu_item'));
 
+   if (isMobile) {
+      $('#hamburger').click(function () {
+         if ($('#nav_menu').css('display') == 'none') {
+            $('#nav_menu').css('display', 'flex');
+         } else {
+            $('#nav_menu').css('display', 'none');
+         }
+      });
+   }
+
    document.title = 'Lily Zhang';
-   // $('#nav_title').text('Lily Zhang');
 });
 
 function render_links(obj, klass) {

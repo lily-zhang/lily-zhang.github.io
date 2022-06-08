@@ -1,62 +1,64 @@
 body {
    background-color: #F2EBEB;
-}
-
-#nav_container {
-   position: fixed;
-   left: 3vw;
-   width: 12vw;
-   float: left;
-   text-align: center;
-}
-
-#nav_icon {
-   background-image: url('images/pandora.jpg');
-   background-repeat: no-repeat;
-   width: 12vw;
-   height: 30vw;
-   background-size: cover;
-   margin-bottom: 20px;
-}
-
-#nav_title {
-   margin-bottom: 15px;
-   font-family: Fairfield;
-   font-size: 13pt;
-}
-
-#nav_menu {
-   display: flex;
-   flex-direction: column;
+   padding: 0;
+   margin: 0;
 }
 
 #nav_bar {
+   position: fixed;
+   width: 100vw;
+   height: 8vh;
+   background-color: #6bbcbd;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   display: block;
+   z-index: 100;
+}
+
+#nav_bar_filler_space {
+   height: 8vh;
+}
+
+#nav_icon {
    display: none;
+}
+
+#nav_title {
+   display: none;
+}
+
+#nav_menu {
+   display: none;
+   flex-direction: column;
+   margin-top: 6vh;
+   margin-bottom: 6vh;
+}
+
+img#hamburger {
+   cursor: pointer;
+   position: fixed;
+   height: 8vh;
 }
 
 a.nav_menu_item:link, a.nav_menu_item:visited, a.nav_menu_item:active {
    font-family: BankPrinter;
-   font-size: 8pt;
+   font-size: 14pt;
    color: #635780;
-   padding-bottom: 5px;
+   padding-bottom: 7px;
    text-align: center;
-   text-decoration: none;
+   text-decoration: underline;
 }
 
 a.nav_menu_item:hover {
    color: #DC394E;
 }
 
-#content {
-   position: relative;
-   left: 18vw;
-   margin-top: 50px;
-   width: 65vw;
-}
-
 p.content-text {
+   margin: 2vh 2vw;
    font-family: Fairfield;
-   font-size: 11pt;
+   font-size: 14pt;
 }
 
 ul.content-text {
@@ -127,17 +129,16 @@ ul.content-text a:hover {
 /* PHOTOS/DRAWINGS/FILMS GALLERY */
 #album_menu {
    display: flex;
-   flex-direction: column;
-   float: left;
-   width: 15%;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 100%;
+   margin: 2vh 0 1vh 0;
 }
 
 .album_item {
    font-family: Fairfield;
    font-style: normal;
-   font-size: 10pt;
-   margin-bottom: 2px;
-   margin-left: 5px;
+   font-size: 16pt;
 }
 
 .album_item_hover {
@@ -146,40 +147,44 @@ ul.content-text a:hover {
 
 #image_menu {
    display: flex;
-   flex-direction: column;
-   float: left;
-   width: 15vh;
-   overflow-y: scroll;
-   height: 85vh;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 #image_display {
-   float:right;
-   width: 60%;
-   margin-left: 40px;
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   top:0;
+   left:0;
+   display: none;
+   z-index: 101;
+   background-color: white;
+   text-align: center;
 }
 
 .thumbnail {
-   height: 13vh;
-   width: 13vh;
    object-fit: cover;
-   margin: 3px;
-   opacity: 0.5;
-   border-radius: 5px;
+   height: 30vh;
+   width: 30vh;
+   margin: 0.7vh;
+   border-radius: 8px;
    cursor: pointer;
 }
 
 .image_caption {
-   padding: 13px;
    font-family: Fairfield;
-   font-size: 10pt;
-   margin-left: 30px;
+   font-size: 14pt;
+   position: fixed;
+   left: 2vh;
+   bottom: 2vh;
+   background-color: rgba(255, 255, 255, 0.8);
 }
 
 .displayed_image {
-   max-height: 80vh;
-   max-width: 50vw;
-   margin-left: 30px;
+   max-width: 100%;
+   max-height: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -214,12 +219,4 @@ ul.content-text a:hover {
 @font-face {
    font-family: BankPrinter;
    src: url(fonts/bank-printer.otf);
-}
-
-#mobile_display {
-   display: none;
-   padding: 7vh;
-   font-family: Fairfield;
-   font-size: 7vh;
-   text-align: center;
 }

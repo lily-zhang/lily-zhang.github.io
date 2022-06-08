@@ -3,17 +3,21 @@
 <head>
    <meta charset="utf-8">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <link rel="stylesheet" href="site.css">
-   <link rel="stylesheet" href="mobile.css">
+   <link rel="stylesheet" id="stylesheet">
    <script src="site.js"></script>
+   <script src="gallery_layout.js"></script>
    <script src="drawing.js"></script>
 </head>
 <body>
-      <div id="nav_container">
-         <div id="nav_icon"></div>
-         <div id="nav_title"></div>
-         <div id="nav_menu"></div>
+   <div id="nav_container">
+      <div id="nav_icon"></div>
+      <div id="nav_title"></div>
+      <div id="nav_bar">
+         <img id="hamburger" src="images/hamburger.png"/>
       </div>
+      <div id="nav_bar_filler_space"></div>
+      <div id="nav_menu"></div>
+   </div>
       <div id="content">
          <div id="album_menu" class="submenu"></div>
          <div id="image_menu" class="submenu"></div>
