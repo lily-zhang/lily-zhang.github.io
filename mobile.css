@@ -44,7 +44,7 @@ img#hamburger {
 
 a.nav_menu_item:link, a.nav_menu_item:visited, a.nav_menu_item:active {
    font-family: BankPrinter;
-   font-size: 2em;
+   font-size: 3em;
    color: #635780;
    padding-bottom: 7px;
    text-align: center;
@@ -58,12 +58,12 @@ a.nav_menu_item:hover {
 p.content-text {
    margin: 2vh 2vw;
    font-family: Fairfield;
-   font-size: 1em;
+   font-size: 2em;
 }
 
 ul.content-text {
    font-family: Fairfield;
-   font-size: 1em;
+   font-size: 2em;
    line-height: 1.5;
    list-style-type: square;
 }

@@ -15,7 +15,7 @@ files = {
    },
    'Illustration' : {
       '11.jpg' : '',
-      'claudia.png' : '',
+      'claudia.jpg' : '',
       '9.jpg' : ''
    },
    'Misc.' : {
