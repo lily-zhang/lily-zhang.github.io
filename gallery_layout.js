@@ -66,7 +66,6 @@ $(document).ready(function() {
                image_display.append(image, caption);
                image_display.fadeIn(150);
 
-
                image_display.click(function () {
                   image_display.fadeOut(150);
                });
@@ -111,4 +110,7 @@ $(document).ready(function() {
          });
       }
    });
+
+   // Open the first album
+   $('.album_item').first().click();
 });

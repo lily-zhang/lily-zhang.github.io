@@ -16,6 +16,11 @@ $(document).ready(function() {
    $('#nav_menu').append(render_links(pages, 'nav_menu_item'));
 
    if (isMobile) {
+      $('#hamburger').on({
+         mouseenter: function () { $(this).addClass('hamburger_hover'); },
+         mouseleave: function () { $(this).removeClass('hamburger_hover'); }
+      });
+
       $('#hamburger').click(function () {
          if ($('#nav_menu').css('display') == 'none') {
             $('#nav_menu').css('display', 'flex');

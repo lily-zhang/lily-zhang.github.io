@@ -42,6 +42,10 @@ img#hamburger {
    height: 8vh;
 }
 
+img.hamburger_hover {
+   background-color: red;
+}
+
 a.nav_menu_item:link, a.nav_menu_item:visited, a.nav_menu_item:active {
    font-family: BankPrinter;
    font-size: 4em;
@@ -55,15 +59,19 @@ a.nav_menu_item:hover {
    color: #DC394E;
 }
 
+#content {
+   /* text-align: center; */
+}
+
 p.content-text {
    margin: 2vh 2vw;
    font-family: Fairfield;
-   font-size: 3em;
+   font-size: 4em;
 }
 
 ul.content-text {
    font-family: Fairfield;
-   font-size: 3em;
+   font-size: 4em;
    line-height: 1.5;
    list-style-type: square;
 }
@@ -146,12 +154,25 @@ ul.content-text a:hover {
 }
 
 #image_menu {
+   width: 99vw;
+   left: 0.5vw;
+   position: relative;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
+   /* align-items: center; */
+   justify-content: flex-start;
    /* justify-content: center; */
-   align-items: center;
-   justify-content: space-between;
+   /* justify-content: space-between; */
+}
+
+.thumbnail {
+   object-fit: cover;
+   height: 31vw;
+   width: 31vw;
+   margin: 1vw;
+   border-radius: 8px;
+   cursor: pointer;
 }
 
 #image_display {
@@ -166,15 +187,6 @@ ul.content-text a:hover {
    /* text-align: center; */
 }
 
-.thumbnail {
-   object-fit: cover;
-   height: 30vw;
-   width: 30vw;
-   margin: 0.7vw;
-   border-radius: 8px;
-   cursor: pointer;
-}
-
 .image_caption {
    font-family: Fairfield;
    font-size: 3em;
@@ -187,6 +199,12 @@ ul.content-text a:hover {
 .displayed_image {
    max-width: 100%;
    max-height: 100%;
+   margin: auto;
+   display: block;
+   position: relative;
+   top: 50%;
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
 }
 
 ::-webkit-scrollbar {

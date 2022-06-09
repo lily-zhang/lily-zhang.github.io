@@ -9,30 +9,6 @@ files = {
       'multiverse2.jpg' : '',
       'flower.jpg' : '',
    }
-   ,'Misc.' : {
-      'misc21.jpg' : '',
-      'misc22.jpg' : 'les amants',
-      // 'misc18.jpg' : '',
-      // 'misc19.jpg' : '',
-      // 'misc1.jpg' : '',
-      // 'misc2.jpg' : '',
-      'misc3.jpg' : '',
-      // 'misc4.jpg' : '',
-      // 'misc5.jpg' : '',
-      'misc6.jpg' : 'Archives in the summer',
-      // 'misc7.jpg' : '',
-      'misc8.jpg' : '',
-      'misc9.jpg' : '',
-      // 'misc10.jpg' : '',
-      // 'misc11.jpg' : '',
-      // 'misc12.jpg' : '',
-      // 'misc13.jpg' : '',
-      // 'misc14.jpg' : '',
-      // 'misc15.jpg' : '',
-      // 'misc16.jpg' : '',
-      // 'misc17.jpg' : '',
-      // 'misc20.jpg' : ''
-   }
    ,'Travel' : {
       'travels1.jpg' : 'Driving around Oahu',
       'travels2.jpg' : '',
@@ -80,6 +56,30 @@ files = {
       'campus31.jpg' : '',
       'campus32.jpg' : ''
    }
+   ,'Misc.' : {
+      'misc21.jpg' : '',
+      'misc22.jpg' : 'les amants',
+      // 'misc18.jpg' : '',
+      // 'misc19.jpg' : '',
+      // 'misc1.jpg' : '',
+      // 'misc2.jpg' : '',
+      'misc3.jpg' : '',
+      // 'misc4.jpg' : '',
+      // 'misc5.jpg' : '',
+      'misc6.jpg' : 'Archives in the summer',
+      // 'misc7.jpg' : '',
+      'misc8.jpg' : '',
+      'misc9.jpg' : '',
+      // 'misc10.jpg' : '',
+      // 'misc11.jpg' : '',
+      // 'misc12.jpg' : '',
+      // 'misc13.jpg' : '',
+      // 'misc14.jpg' : '',
+      // 'misc15.jpg' : '',
+      // 'misc16.jpg' : '',
+      // 'misc17.jpg' : '',
+      // 'misc20.jpg' : ''
+   }
 }
 
 directory_name = 'photos';
@@ -89,5 +89,4 @@ album_directory = {
    'Travel' : 'travels',
    'Campus' : 'campus',
    'Misc.' : 'misc'
-
 }
