@@ -32,8 +32,8 @@ body {
 #nav_menu {
    display: none;
    flex-direction: column;
-   margin-top: 6vh;
-   margin-bottom: 6vh;
+   margin-top: 3vh;
+   margin-bottom: 3vh;
 }
 
 img#hamburger {
@@ -46,7 +46,7 @@ a.nav_menu_item:link, a.nav_menu_item:visited, a.nav_menu_item:active {
    font-family: BankPrinter;
    font-size: 4em;
    color: #635780;
-   padding-bottom: 2em;
+   padding-bottom: 8px;
    text-align: center;
    text-decoration: underline;
 }
@@ -58,12 +58,12 @@ a.nav_menu_item:hover {
 p.content-text {
    margin: 2vh 2vw;
    font-family: Fairfield;
-   font-size: 2em;
+   font-size: 3em;
 }
 
 ul.content-text {
    font-family: Fairfield;
-   font-size: 4em;
+   font-size: 3em;
    line-height: 1.5;
    list-style-type: square;
 }
@@ -151,6 +151,7 @@ ul.content-text a:hover {
    flex-wrap: wrap;
    /* justify-content: center; */
    align-items: center;
+   justify-content: space-between;
 }
 
 #image_display {
@@ -162,8 +163,7 @@ ul.content-text a:hover {
    display: none;
    z-index: 101;
    background-color: white;
-   text-align: center;
-   vertical-align: center;
+   /* text-align: center; */
 }
 
 .thumbnail {

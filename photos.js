@@ -9,7 +9,7 @@ files = {
       'multiverse2.jpg' : '',
       'flower.jpg' : '',
    }
-   ,'Daily Life' : {
+   ,'Misc.' : {
       'misc21.jpg' : '',
       'misc22.jpg' : 'les amants',
       // 'misc18.jpg' : '',
@@ -86,7 +86,8 @@ directory_name = 'photos';
 
 album_directory = {
    'B/W' : 'bw',
+   'Travel' : 'travels',
    'Campus' : 'campus',
-   'Daily Life' : 'misc',
-   'Travel' : 'travels'
+   'Misc.' : 'misc'
+
 }
