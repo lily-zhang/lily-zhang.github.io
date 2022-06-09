@@ -43,7 +43,6 @@ img#hamburger {
 }
 
 img.hamburger_hover {
-   background-color: red;
 }
 
 a.nav_menu_item:link, a.nav_menu_item:visited, a.nav_menu_item:active {
